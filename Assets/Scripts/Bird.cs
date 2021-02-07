@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Bird : MonoBehaviour
 {
     public enum BirdState { Idle, Thrown, HitSomething }
-    public GameObject Parent;
     public Rigidbody2D RigidBody;
     public CircleCollider2D Collider;
 
@@ -75,6 +74,11 @@ public class Bird : MonoBehaviour
         RigidBody.bodyType = RigidbodyType2D.Dynamic;
         RigidBody.velocity = velocity * speed * distance;
         OnBirdShot(this);
+    }
+
+    public virtual void OnTap()
+    {
+        //Do nothing
     }
 
 }
