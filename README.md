@@ -1,6 +1,6 @@
-# Pong Game: The Game
+# Angeri Birb
 
-This is a very basic Pong game made in Unity. It has its own rules, yet similar to the original game. Also the ball is a ball, not a square. And it's red.
+This is an Angry Birds clone and currently is one level long. The obstacles are apparently immortal, they cannot break.
 
 This game is made as a study in game development, presented by Agate Academy.
 
@@ -12,25 +12,15 @@ There is no need to install the game. The build version of the game is in the bu
 
 ## Features & Keybinds
 
-- This is a 2 player game, although you can play it by yourself...
-- The rules are simple, don't let the ball get past your racket.
-- You can use a power up to temporarily increase the size of your racket. It also has a cooldown.
+- This is a single player game.
+- The rules are simple, kill all the pigs before you run out of birbs.
 - Controls:
-  - Player 1: Left Side
-    - Up: W
-    - Down: S
-    - Power Up: E
-  - Player 2 : Right Side
-    - Up: P
-    - Down: L
-    - Power Up: O
-- Score 5 points to win the game.
-- Click the RESTART button to reset the game.
-- Click the TOGGLE DEBUG INFO to see some metrics and show the ball's trajectory.
-
-## Updates
-
-- Added power up to temporarily increase racket size
+  - Charge up your birb on the catapult by clicking and holding
+  - Release it to launch the birb
+- There are currently 3 types of birbs
+  - Red Birb: No special abilities
+  - Yellow Birb: Tap the bird after throwing it to give a speed boost
+  - Owl Birb: Grows 2x its size after contact with anything
 
 ## Contributor
 
