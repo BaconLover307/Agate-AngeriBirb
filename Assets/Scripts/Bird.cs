@@ -10,7 +10,10 @@ public class Bird : MonoBehaviour
     public CircleCollider2D Collider;
 
     private BirdState _state;
-    public BirdState State { get { return _state; } }
+    public BirdState State {
+        get { return _state; }
+        set { _state = value; }
+    }
 
     private float _minVelocity = 0.05f;
     private bool _flagDestroy = false;
@@ -51,7 +54,7 @@ public class Bird : MonoBehaviour
             OnBirdDestroyed();
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    public virtual void OnCollisionEnter2D(Collision2D col)
     {
         _state = BirdState.HitSomething;
     }
